@@ -66,3 +66,6 @@ npm install
 npm start
 
 👉 The application will run at http://localhost:3000.
+
+🤝 Contributing
+Feel free to contribute! Open a pull request if you find any issues or want to add new features.
