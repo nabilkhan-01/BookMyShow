@@ -1,25 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NavbarComponent from './components/NavbarComponent';
+import Home from './pages/Home';
+import Movies from './pages/Movies';
+import MovieDetails from './pages/MovieDetails';
+import Auth from './pages/Auth';
+import Booking from './pages/Booking';
+import BookingDetails from './pages/BookingDetails';
+import { Container } from 'react-bootstrap';
 
-function App() {
+const App = () => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  // Dark Mode Toggle
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    document.body.className = darkMode ? '' : 'dark-mode';
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className={darkMode ? 'dark-mode' : ''}>
+        {/* Navbar with Dark Mode Toggle */}
+        <NavbarComponent toggleDarkMode={toggleDarkMode} />
+        <Container className="mt-4">
+          <Routes>
+            {/* Home Page */}
+            <Route path="/" element={<Home />} />
+
+            {/* Movies Listing */}
+            <Route path="/movies" element={<Movies />} />
+
+            {/* Movie Details Page */}
+            <Route path="/movie/:name" element={<MovieDetails />} />
+
+            {/* Sign In & Sign Up Page */}
+            <Route path="/signin" element={<Auth />} />
+            <Route path="/signup" element={<Auth />} />
+
+            {/* Seat Selection & Booking */}
+            <Route path="/booking/:name" element={<Booking />} />
+
+            {/* Booking Details and Payment */}
+            <Route path="/booking-details" element={<BookingDetails />} />
+          </Routes>
+        </Container>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

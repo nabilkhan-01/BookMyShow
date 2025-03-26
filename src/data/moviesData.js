@@ -1,0 +1,55 @@
+// src/data/moviesData.js
+const movies = [
+  {
+    id: 1,
+    name: 'Parasite',
+    genre: 'Drama',
+    releaseDate: '2019-11-08',
+    rating: 8.5,
+    price: 320,
+    image: `${process.env.PUBLIC_URL}/assets/movie1.jpg`,
+    trailerUrl: 'https://www.youtube.com/watch?v=5xH0HfJHsaY',
+  },
+  {
+    id: 2,
+    name: '12th Fail',
+    genre: 'Drama',
+    releaseDate: '2023-10-27',
+    rating: 8.8,
+    price: 280,
+    image: `${process.env.PUBLIC_URL}/assets/movie2.jpg`,
+    trailerUrl: 'https://youtu.be/afEJYg0tyJ4?feature=shared',
+  },
+  {
+    id: 3,
+    name: 'Spider-Man: Across the Spider-Verse',
+    genre: 'Action',
+    releaseDate: '2023-05-31',
+    rating: 8.5,
+    price: 250,
+    image: `${process.env.PUBLIC_URL}/assets/movie3.jpg`,
+    trailerUrl: 'https://www.youtube.com/watch?v=cqGjhVJWtEg',
+  },
+  {
+    id: 4,
+    name: 'Joker',
+    genre: 'Drama',
+    releaseDate: '2019-10-04',
+    rating: 8.3,
+    price: 280,
+    image: `${process.env.PUBLIC_URL}/assets/movie4.jpg`,
+    trailerUrl: 'https://www.youtube.com/watch?v=t433PEQGErc',
+  },
+  {
+    id: 5,
+    name: 'Avengers: Endgame',
+    genre: 'Action',
+    releaseDate: '2019-04-26',
+    rating: 8.4,
+    price: 250,
+    image: `${process.env.PUBLIC_URL}/assets/movie5.jpg`,
+    trailerUrl: 'https://www.youtube.com/watch?v=TcMBFSGVi1c',
+  },
+];
+
+export default movies;
