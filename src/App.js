@@ -1,7 +1,6 @@
 // src/App.js
 import React, { useState } from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavbarComponent from './components/NavbarComponent';
 import Home from './pages/Home';
 import Movies from './pages/Movies';

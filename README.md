@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+🎬 BookMyShow  - Movie Booking System
+A fully responsive and interactive movie booking website built using React.js and Bootstrap. The application mimics the design and functionality of BookMyShow, allowing users to browse movies, view details, book tickets, and download receipts.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🚀 Live Demo
+👉 (https://nabilkhan-01.github.io/BookMyShow/)
 
-## Available Scripts
+📚 Features
+✅ Responsive Navbar with Dark Mode Toggle
+✅ Movie Carousel with Clickable Movies
+✅ Movie Listings with Details and Trailers
+✅ Auth System (Sign In/Sign Up)
+✅ Seat Selection and Ticket Booking
+✅ Payment Page and Downloadable Receipt
+✅ Dark Mode Support
 
-In the project directory, you can run:
+🛠️ Tech Stack
+⚛️ React.js
 
-### `npm start`
+🎨 Bootstrap
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+📄 React Router
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🎥 React Player
 
-### `npm test`
+📚 gh-pages
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+📂 Project Structure
+📁 BookMyShow
+├── 📁 public
+│   └── 📁 assets
+│       ├── movie1.jpg
+│       ├── movie2.jpg
+│       └── ...
+├── 📁 src
+│   ├── 📁 components
+│   │   ├── CarouselComponent.js
+│   │   ├── MovieCardComponent.js
+│   │   └── NavbarComponent.js
+│   ├── 📁 data
+│   │   └── moviesData.js
+│   ├── 📁 pages
+│   │   ├── Auth.js
+│   │   ├── Booking.js
+│   │   ├── BookingDetails.js
+│   │   ├── Home.js
+│   │   ├── MovieDetails.js
+│   │   └── Movies.js
+│   ├── 📁 styles
+│   │   ├── custom.css
+│   │   └── index.css
+│   ├── App.js
+│   ├── index.js
+│   └── package.json
+└── 📄 README.md
+🧩 Installation & Setup
+1. Clone the Repository
+git clone https://github.com/nabilkhan-01/BookMyShow.git
 
-### `npm run build`
+3. Navigate to the Project Directory
+cd BookMyShow
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Install Dependencies
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. Start Development Server
+npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+👉 The application will run at http://localhost:3000.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🤝 Contributing
+Feel free to contribute! Open a pull request if you find any issues or want to add new features.
